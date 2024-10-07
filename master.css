@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; /* کاهش حداکثر عرض */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+    width: 80px; 
+    margin-bottom: 20px;
+}
+
+.wallet-box {
+    background-color: #e3f2fd; 
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background 0.3s; 
+}
+
+.wallet-box:hover {
+    background-color: #bbdefb; 
+}
+
+.wallet-address {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #0d47a1; 
+}
+
+.connect-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #42a5f5, #1e88e5); /* گرادیانت دکمه */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.connect-button:hover {
+    background: linear-gradient(90deg, #1e88e5, #42a5f5); }
+    
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background: #1976d2;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 80%;
+    top: 20px; 
+    z-index: 1000;
+}
+
+.navbar div {
+    text-align: center;
+    color: white;
+    transition: transform 0.3s; 
+}
+
+.navbar div:hover {
+    transform: scale(1.1); 
+}
+
+.navbar i {
+    font-size: 28px;
+    margin-bottom: 5px; 
+    color: white;
+    transition: color 0.3s; 
+}
+
+.navbar div:hover i {
+    color: #ffeb3b; 
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 14px;
+}
